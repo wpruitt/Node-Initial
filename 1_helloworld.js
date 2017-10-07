@@ -5,8 +5,9 @@ hello();
 
 // console.log(process.argv);
 
+// var greet = process.argv[2] || "World";
 
 // var hello = function(name) {
 //     console.log('Hello ' + name + '!');
 // }
-// hello(process.argv[2]);
+// hello(greet);
