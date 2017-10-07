@@ -2,7 +2,6 @@
 (This is a very thrown together, last minute talk. Please forgive everything about it.)
 
 This is line 4. (Might be relevant later)
-Aaaaand line 5.
 
 ### What is NodeJS?
 JavaScript has long been the ubiquitous language of the web because it has become present in every computer, phone, and web-capable device. It has long been used for client-side scripting, embedded in HTML files to be executed in the browser when you visit a web page. It's baked into IE, Chrome, Firefox, Safari, Opera and most every browser you can think of.
@@ -16,9 +15,11 @@ If you've done back-end things in other languages, you may be familiar with usin
 
 With NodeJS, npm is now bundled together automatically.  It stands for Node Package Manager, and is a great way to quickly add useful JavaScript functionality to your own code.
 
-npm init
-npm install
-package.json
+Some basic commands to know
+- npm init
+- npm install --save
+
+A node project will have a 'package.json' file which holds dependencies and some other information.
 
 ### Platform
 We're going to be using Cloud9, a cloud based IDE, to run these demonstrations. If you'd like to code along with me, please go ahead and create a free account at c9.io
@@ -47,4 +48,6 @@ Now we're going to use our first node library.  This comes baked into Node alrea
 We start by declaring a variable and setting it to 'require' the 'fs' library. I'm basically pulling in an Object that has a method I want to use, which reads a file. This method returns a buffer object, which we're going to convert to a string and then split into an array separating each line.
 
 ### Hello Web
-Now we're going to make a simple web server. For that we're going to bring in 'http', a baked in node library for handling web requests. 
+Now we're going to make a simple web server. For that we're going to bring in 'http', a baked in node library for handling web requests. The require method saves our library into a variable we can use.
+
+### Hello Express
