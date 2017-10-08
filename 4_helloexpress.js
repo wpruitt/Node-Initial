@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 
 // environment variables
 var port = 8080;
-var hostname = '0.0.0.0';
+var hostname = 'localhost';
 
 // parses text content of a http request
 app.use(bodyParser.text({ type: 'text/html' }));
@@ -15,7 +15,7 @@ app.use(bodyParser.text({ type: 'text/html' }));
 app.use(express.static('public'));
 
 // this handles our post request from the front end
-app.post('/', function(req, res, next) {
+app.post('/', function(req, res/* , next */) {
     console.log('Message from browser: ',  req.body);
     res.end('Message received. Hello from the back end!');
 })
